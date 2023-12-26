@@ -1,5 +1,5 @@
 #include <iostream>
-#include "IntCell.h"
+#include "IntCell.hpp"
 using namespace std;
 
 int main(){
@@ -11,8 +11,13 @@ int main(){
     IntCell *q = new IntCell{}; // zero parameter constructor
     IntCell *r = new IntCell; // zero parameter constructor
 
+    IntCell C{30};
+    IntCell B = C; // copy constructor
+    IntCell D {C}; // copy constructor
+
     cout << "Cell contents: " << m.read() << endl;
     cout << "Cell contents: " << p->read() << endl;
+    cout << "Cell contents: " << B.read() << endl;
     return 0;
 }
 

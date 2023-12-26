@@ -1,5 +1,5 @@
-#ifndef IntCell_H
-#define IntCell_H
+#ifndef IntCell_HPP
+#define IntCell_HPP
 
 class IntCell{
     public:
